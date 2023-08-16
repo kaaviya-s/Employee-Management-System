@@ -1,0 +1,33 @@
+<div class="text-bg-drak text-center rounded-bottom"
+style="margin-top:20px;margin-bottom:80px;font-size:2rem" >
+    <h1>Employee Register</h1>
+    <!-- display-4 -->
+</div>
+
+<div class="p-4 box">
+    <div class="row">
+        <div class="col-md-6">
+            <app-employee-form></app-employee-form>
+        </div>
+        <div class="col-md-6" style="overflow-y:scroll;height:300px">
+            <table class="table" >
+                <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>Position</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr *ngFor="let emp of service.list">
+                        <td (click)="populateForm(emp)">{{emp.fullName}}</td>
+                        <td>{{emp.position}}</td>
+                        <td>
+                            <button><i class="far fa-trash-alt fa-lg text-secondary"
+                                (click)="onDelete(emp._id)"></i></button>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>

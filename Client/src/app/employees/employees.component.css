@@ -1,0 +1,29 @@
+form{
+    padding:5px;
+}
+
+
+form label{
+    color:grey;
+    text-transform: uppercase;
+}
+
+form input{
+    font-weight: 500;
+}
+
+form input:placeholder{
+    color:grey !important;
+    font-weight: 300 !important;
+}
+
+form button[type=submit]{
+    text-transform:uppercase;
+}
+
+.box{
+    margin-top:20px;
+    background-color: lightblue; 
+    border:2px solid black;
+    box-shadow: 0 8px 8px -4px black;
+}
