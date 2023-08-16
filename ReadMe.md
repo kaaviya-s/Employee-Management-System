@@ -4,6 +4,7 @@ Command:
 type either "npm start" or "ng serve"
 
 To run the server server side..
+
 Command:
 type "node <rootFileName>"
 or
